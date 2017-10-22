@@ -1,0 +1,4 @@
+#unzipit files to ignore
+
+temp/
+test/

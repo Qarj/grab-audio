@@ -1,6 +1,6 @@
-# grab-audio 0.1.0
+# grab-audio 0.2.0
 
-Grabs the first audio track it recognises from all video files in a folder.
+Grabs the first audio track it recognises from all video files in a folder, and subfolders of that folder.
 
 Puts new audio file in a subfolder called `grabaudio`.
 
@@ -12,6 +12,6 @@ Puts new audio file in a subfolder called `grabaudio`.
 ## Usage
 
 ```
-grabaudio.py --path path/to/folder_with_video_files
+grabaudio.py path/to/folder_with_video_files
 ```
 

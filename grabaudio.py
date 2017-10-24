@@ -88,6 +88,14 @@ def get_extract_method(file_full):
         print ("[found dts]...", end='')
         return (extract + [dest_no_ext+'.dts'], dest_path)
 
+    if decoded.find("Audio: wmav2") > 0:
+        print ("[found wmav2]...", end='')
+        return (extract + [dest_no_ext+'.wma'], dest_path)
+
+    if decoded.find("Audio: vorbis") > 0:
+        print ("[found vorbis]...", end='')
+        return (extract + [dest_no_ext+'.ogg'], dest_path)
+
     print (" did not recognise audio stream\n\n", end='')
     print (decoded,"\n\n")
 
